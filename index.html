@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- code by webdevtrick ( https://webdevtrick.com) -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+    <title>JavaScript Font Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <aside>
+	<span><strong>Current Font:</strong></span><br>
+        <div class="selected-font"></div>
+        <div class="search-font">
+            <input 
+               type="text" 
+                id="font-search" 
+                aria-label="Search fonts"
+                placeholder="Search...."
+                onkeyup="searchFonts()">
+        </div>
+        
+        <ul id="fonts"></ul>
+    </aside>
+    <main>
+        <header>
+            <div class="size">
+        
+			<h1>JavaScript - Google Font Manager</h1>
+
+            <div class="copy-this-font"><button id="copy-this-font">Copy Font</button></div>
+			</div>
+        </header>
+		
+        <textarea id="content" placeholder="Type or Paste Text Here, &amp; Choose The Perfect Font."></textarea>  
+    </main>
+    <script src="function.js"></script>
+</body>
+</html>
